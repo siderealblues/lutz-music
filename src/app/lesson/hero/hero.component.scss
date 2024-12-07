@@ -1,0 +1,41 @@
+h1 {
+  font-size: 3rem;
+}
+
+h2 {}
+
+img {
+  border-radius: 4px;
+  border: 2px solid #E09900;
+  width: 250px;
+  height: 350px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section.desktop {
+  display: none;
+  flex-direction: column;
+  background: linear-gradient(#003B81 5%, #FFF, #FFF);
+  padding: 3.5rem 0;
+}
+
+section.mobile {
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@media (min-width: 900px) {
+  section.mobile {
+    display: none;
+  }
+
+  section.desktop {
+    display: block;
+  }
+}
