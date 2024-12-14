@@ -1,1 +1,26 @@
-<p>sign-up works!</p>
+<h4>SIGN UP TODAY!</h4>
+<section>
+  <div *ngFor="let item of data">
+    <div>
+      <h5>Music Lessons</h5>
+      <div>{{item.subTitle}}</div>
+    </div>
+    <div class="body">
+      <span>$</span>
+      <span class="price">{{item.price}}</span>
+      <span>/month</span>
+    </div>
+    <div>
+      &nbsp;
+    </div>
+  </div>
+</section>
+<div class="iframe-container">
+  <iframe
+    src="https://calendly.com/daniel-lutzzz/30min?embed_domain=daniellutzmusic.com&amp;embed_type=Inline&amp;hide_event_type_details=1&amp;hide_gdpr_banner=1&amp;text_color=003b81&amp;primary_color=003b81"
+    width="100%"
+    height="100%"
+    frameborder="0"
+    title="Select a Date &amp; Time - Calendly"
+  ></iframe>
+</div>

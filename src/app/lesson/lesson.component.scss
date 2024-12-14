@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+  }
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+
+    path {
+      fill: #FFF;
+    }
+  }
+}

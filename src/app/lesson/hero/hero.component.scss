@@ -18,7 +18,7 @@ section {
 section.desktop {
   display: none;
   flex-direction: column;
-  background: linear-gradient(#003B81 5%, #FFF, #FFF);
+  background: linear-gradient(var(--blue) 5%, #FFF, #FFF);
   padding: 3.5rem 0;
 }
 
@@ -27,6 +27,51 @@ section.mobile {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: #CCC;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  justify-content: flex-end;
+
+  >*:last-child {
+    margin-bottom: 8rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+    }
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+
+      path {
+        fill: var(--orange);
+      }
+    }
+  }
+
+  .skill {
+    font-size: 1.5rem;
+  }
+
+  .action a {
+    display: inline-block;
+    border: var(--orange) solid 2px;
+    border-radius: 3px;
+    background: transparent;
+    padding: 1rem;
+    color: var(--orange);
+    font-size: 22px;
+    text-decoration: none;
+  }
 }
 
 
@@ -37,5 +82,31 @@ section.mobile {
 
   section.desktop {
     display: block;
+  }
+}
+
+.discover {
+  font-size: 60px;
+  background: linear-gradient(-48deg, #E09900, #FFFFFF, #003B81, #FFFFFF);
+  background-size: auto;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300%;
+  animation: gradient-flow 8s ease-in-out infinite;
+  text-shadow: 0.04em 0.04em 0.08em rgba(0, 0, 0, 0.4);
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
   }
 }

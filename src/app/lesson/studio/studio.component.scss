@@ -1,7 +1,62 @@
-button {
-  color: #FFF;
-  border: 10px dotted #FFF;
-  background-color: rgba(146, 239, 197, 0.96);
-  width: 70px;
-  height: 70px;
+h4 {
+  color: var(--blue);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  >img {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  button {
+    color: #FFF;
+    border: 3px dotted #FFF;
+    background-color: rgba(146, 239, 197, 0.96);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    >svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      path {
+        fill: currentColor;
+      }
+    }
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+:host>div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  >button {
+    flex: 1;
+    border: none;
+    padding: 0;
+
+    >img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+  .inactive {
+    opacity: 0.5;
+  }
 }

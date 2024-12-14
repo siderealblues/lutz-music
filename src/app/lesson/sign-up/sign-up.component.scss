@@ -1,0 +1,53 @@
+h4 {
+  color: var(--blue);
+}
+
+.iframe-container {
+  min-width: 320px;
+  height: 700px;
+}
+
+
+section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  >div {
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+
+    >div:first-child {
+      background-color: var(--blue);
+      color: #FFF;
+      padding: 1rem 3rem;
+
+      h5 {
+        font-size: 32px;
+      }
+    }
+
+    >div.body {
+      padding: 1rem;
+      line-height: 80px;
+
+      >span:first-child {
+        vertical-align: top;
+      }
+
+      span.price {
+        font-size: 80px;
+        color: var(--blue);
+        text-shadow: 0.02em 0.04em 0.12em rgba(0, 0, 0, 0.4);
+        font-weight: lighter;
+      }
+    }
+
+    >div:last-child {
+      background-color: var(--orange);
+      padding: 1rem;
+    }
+  }
+}
