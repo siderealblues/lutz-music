@@ -5,8 +5,9 @@
     [class.inactive]="index !== idx"
   >
     <button
+      #button
       class="d-flex justify-content-between"
-      (click)="index = idx"
+      (click)="onClick(idx, button)"
     >
       <h5>{{item.title}}</h5>
       <div *ngIf="index !== idx">

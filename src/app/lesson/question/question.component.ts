@@ -50,4 +50,14 @@ export class QuestionComponent {
       'If you don\'t have an instrument, one can be provided for you on a temporary basis with the expectation that you will be looking to purchase your own for practicing at home.'
     ]
   }];
+
+
+  onClick(index: number, card: HTMLButtonElement): void {
+    this.index = index;
+    setTimeout(() => {
+      card.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }, 100);
+  }
 }
