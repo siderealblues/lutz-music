@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from './hero/hero.component';
+import { RouterLink } from '@angular/router';
 import { AboutComponent } from "./about/about.component";
-import { StudioComponent } from "./studio/studio.component";
+import { HeroComponent } from './hero/hero.component';
 import { QuestionComponent } from "./question/question.component";
-import { TestimonialComponent } from "./testimonial/testimonial.component";
 import { SignUpComponent } from "./sign-up/sign-up.component";
+import { StudioComponent } from "./studio/studio.component";
+import { TestimonialComponent } from "./testimonial/testimonial.component";
 
 @Component({
   selector: 'lm-lesson',
@@ -14,7 +15,8 @@ import { SignUpComponent } from "./sign-up/sign-up.component";
     StudioComponent,
     QuestionComponent,
     TestimonialComponent,
-    SignUpComponent
+    SignUpComponent,
+    RouterLink,
   ],
   templateUrl: './lesson.component.html',
   styleUrl: './lesson.component.scss'

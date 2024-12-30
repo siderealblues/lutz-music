@@ -19,6 +19,7 @@ section {
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
+  font-size: 1.25rem;
 
   >div {
     display: flex;
@@ -29,7 +30,7 @@ section {
     border: 2px solid #000;
     border-radius: 5px;
     padding: 1rem;
-    min-width: 325px;
+    min-width: 350px;
     background: #FFF;
 
     img {

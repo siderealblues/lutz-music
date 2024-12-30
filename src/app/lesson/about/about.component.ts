@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
+  scrollToSignUp(): void {
+    window.document.getElementById('sign-up')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
 }

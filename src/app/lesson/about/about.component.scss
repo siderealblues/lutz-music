@@ -1,39 +1,71 @@
 :host {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: var(--blue);
-  height: 100vh;
 }
 
 .sub-header {
   background-color: var(--orange);
-  padding: 1em;
   color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+
+  >div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+
+    >div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        width: 1.75rem;
+        height: 1.75rem;
+
+        path {
+          fill: currentColor;
+        }
+      }
+    }
+  }
 }
 
 button {
   border: none;
   background-color: #000;
   color: #FFF;
+  font-size: 1.1rem;
   border-radius: 1em;
   padding: 0.75em;
 }
 
 section {
   color: white;
+  padding: 7rem 0;
   display: flex;
-  flex: 1;
-  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 
   >div:first-child {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4rem;
+
+    h3 {
+      padding-bottom: 0.5rem;
+      font-size: 2rem;
+    }
 
     >div {
-      flex: 1;
+      padding: 0 1rem;
       font-size: 1.5rem;
       line-height: 2.5rem;
+      max-width: 700px;
     }
 
     >div:last-child {
@@ -42,9 +74,17 @@ section {
     }
   }
 
+  >div:last-child {
+    text-align: center;
+
+    img {
+      width: 160px;
+    }
+  }
+
   img.about {
     border: 2px solid var(--orange);
-    height: 350px;
+    height: 375px;
     box-shadow: 0px 2px 18px 0px #FFFFFF;
     transform: rotateZ(5deg);
   }
