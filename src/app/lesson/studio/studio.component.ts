@@ -11,9 +11,9 @@ import { Component } from '@angular/core';
 })
 export class StudioComponent {
   images = [
-    '/studio-1.jpg',
-    '/studio-2.jpg',
-    '/studio-3.jpg'
+    'studio-1.jpg',
+    'studio-2.jpg',
+    'studio-3.jpg'
   ];
 
   index = 0;
