@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pages": "ng build --base-href=https://joster-dev.github.io/lutz-music/ --deploy-url=https://joster-dev.github.io/lutz-music/"
   },
   "private": true,
   "dependencies": {
