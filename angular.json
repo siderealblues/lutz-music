@@ -37,6 +37,9 @@
             "styles": [
               "src/styles.scss"
             ],
+            "externalDependencies": [
+              "*.jpg"
+            ],
             "scripts": []
           },
           "configurations": {
