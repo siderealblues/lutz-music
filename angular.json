@@ -38,7 +38,8 @@
               "src/styles.scss"
             ],
             "externalDependencies": [
-              "*.jpg"
+              "*.jpg",
+              "*.ttf"
             ],
             "scripts": []
           },
