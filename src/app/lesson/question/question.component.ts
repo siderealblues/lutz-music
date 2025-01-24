@@ -36,7 +36,7 @@ export class QuestionComponent {
   }, {
     title: 'Can I learn by watching YouTube?',
     text: [
-      'There are many great online resources, but in some ways too many! It\'s hard to make decisions in the face of so many options and having accountability and cosistency are some of the many benefits of private music lessons. Whether you choose online or in-person lessons, I recommend starting with a qualified instructor that you feel comfortable with.'
+      'There are many great online resources, but in some ways too many! It\'s hard to make decisions in the face of so many options and having accountability and consistency are some of the many benefits of private music lessons. Whether you choose online or in-person lessons, I recommend starting with a qualified instructor that you feel comfortable with.'
     ]
   }, {
     title: 'Where are you located?',

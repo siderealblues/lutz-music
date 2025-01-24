@@ -6,7 +6,13 @@
 }
 
 h4 {
-  color: var(--blue);
+  scroll-margin-top: 1rem;
+}
+
+@media (min-width: 1000px) {
+  h4 {
+    scroll-margin-top: calc(54px + 1rem);
+  }
 }
 
 .iframe-container {
@@ -25,6 +31,7 @@ section {
 
   >div {
     min-width: 280px;
+    max-width: 400px;
     flex: 1;
     border-radius: 1rem;
     overflow: hidden;
@@ -58,6 +65,8 @@ section {
 
       span.price {
         font-size: 80px;
+        font-style: italic;
+        letter-spacing: 0.25px;
         line-height: 60px;
         color: var(--blue);
         text-shadow: 0.02em 0.04em 0.12em rgba(0, 0, 0, 0.4);

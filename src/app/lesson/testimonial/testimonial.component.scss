@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
   background-image: linear-gradient(var(--blue), #FFF);
   background-position: 50%;
   background-size: cover;
@@ -17,12 +17,15 @@ h4 {
 section {
   display: flex;
   gap: 1rem;
+  scrollbar-color: var(--orange) black;
+  scrollbar-width: 3rem;
   overflow-x: scroll;
   max-width: 800px;
   width: 100%;
   min-width: 0;
   font-size: 1.25rem;
   font-family: "Caladea";
+  margin: 3rem 0 6rem 0;
 
   >div {
     display: flex;
