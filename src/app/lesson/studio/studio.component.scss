@@ -13,21 +13,22 @@ section {
     flex: 1;
     overflow: hidden;
   }
+}
 
-  button {
-    color: #FFF;
-    border: 3px dotted #FFF;
-    background-color: rgba(146, 239, 197, 0.96);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+section button,
+dialog button {
+  color: #FFF;
+  border: 3px dotted #FFF;
+  background-color: rgba(146, 239, 197, 0.96);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 
-    >svg {
-      width: 1.5rem;
-      height: 1.5rem;
+  >svg {
+    width: 1.5rem;
+    height: 1.5rem;
 
-      path {
-        fill: currentColor;
-      }
+    path {
+      fill: currentColor;
     }
   }
 }
@@ -59,5 +60,54 @@ section {
 
   .inactive {
     opacity: 0.5;
+  }
+}
+
+dialog {
+  background: #0009;
+  backdrop-filter: blur(3px);
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  button {
+
+    >svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      path {
+        fill: currentColor;
+      }
+    }
+  }
+
+  .top {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bottom {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      // flex: 1;
+      min-width: 0;
+
+      max-height: 80vh;
+      width: auto;
+      // max-width: 80vw;
+    }
   }
 }
