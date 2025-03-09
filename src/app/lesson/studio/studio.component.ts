@@ -15,10 +15,24 @@ export class StudioComponent {
     'studio-2.jpg',
     'studio-3.jpg'
   ];
-
   index = 0;
+  buttonClicked = false;
 
-  onClick(newIndex: number) {
+  onClick(newIndex: number, event: Event) {
+    event.stopPropagation();
+    event.preventDefault();
+    this.buttonClicked = true;
     this.index = newIndex;
+    setTimeout(() => {
+      this.buttonClicked = false;
+    }, 2);
+  }
+
+  onDialogClick(dialog: HTMLDialogElement) {
+    setTimeout(() => {
+      if (!this.buttonClicked) {
+        dialog.close();
+      }
+    }, 1);
   }
 }
